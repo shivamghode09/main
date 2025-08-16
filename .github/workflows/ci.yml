@@ -1,0 +1,20 @@
+name: Gravix CI
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main]
+
+jobs:
+  basic-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Verify repository structure
+        run: |
+          echo "Repository checked out successfully."
+          echo "Current repo structure:"
+          ls -R
