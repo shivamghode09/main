@@ -1,0 +1,32 @@
+# Development files
+.git/
+.gitignore
+.npmrc
+.editorconfig
+
+# Build artifacts
+dist/
+coverage/
+
+# Test files
+__tests__/
+*.test.js
+jest.config.js
+
+# Environment files
+.env
+.env.local
+
+# Documentation (unless needed)
+examples/
+docs/
+*.md
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+
+# CI/CD files
+.github/
+.travis.yml
