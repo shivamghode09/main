@@ -1,0 +1,39 @@
+{
+  "name": "gravix-cli",
+  "version": "1.0.0",
+  "description": "Gravix CLI is a smart scaffolding tool that speeds up JavaScript development by reducing boilerplate and automating setup.",
+  "type": "module",
+  "bin": {
+    "create-gravix-app": "./bin/create-gravix-app.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gravix",
+    "scaffolding",
+    "web",
+    "app",
+    "create",
+    "kit"
+  ],
+  "author": "Shivam Ghode",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^4.1.2",
+    "figlet": "^1.8.2",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "update-notifier": "^7.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shivamghode09/main.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shivamghode09/main/issues"
+  },
+  "homepage": "https://github.com/shivamghode09/main#readme"
+}
