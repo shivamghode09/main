@@ -1,0 +1,15 @@
+{
+  "name": "{{name}}",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "gravix": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "gravix": "^1.0.0",
+    "vite": "^6.3.1"
+  }
+}

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --bg-gradient: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  --color-primary: #ffffff;
+  --color-secondary: #00d1ff;
+  --color-muted: #9ca3af;
+  --btn-bg: #00d1ff;
+  --btn-text: #0f2027;
+
+  /* Typography */
+  --font-size-title: 3rem;
+  --font-size-subtitle: 1.25rem;
+  --font-size-body: 1rem;
+
+  /* Spacing & Styling */
+  --spacing-s: 0.6em;
+  --spacing-m: 1em;
+  --spacing-l: 1.5em;
+  --spacing-xl: 2em;
+  --radius: 8px;
+
+  /* Effects */
+  --logo-shadow: drop-shadow(0 0 1.5em rgba(0, 209, 255, 0.7));
+  --transition: 300ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--color-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  padding: var(--spacing-xl);
+  max-width: 600px;
+}
+
+.logo.gravix {
+  height: 6rem;
+  margin-bottom: var(--spacing-m);
+  filter: var(--logo-shadow);
+  transition: transform var(--transition);
+}
+.logo.gravix:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.title {
+  font-size: var(--font-size-title);
+  margin-bottom: var(--spacing-s);
+}
+.subtitle {
+  font-size: var(--font-size-subtitle);
+  font-weight: 400;
+  color: var(--color-muted);
+  margin-bottom: var(--spacing-l);
+}
+
+.btn-container {
+  margin-bottom: var(--spacing-l);
+}
+button {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  padding: var(--spacing-s) var(--spacing-l);
+  font-size: var(--font-size-body);
+  font-weight: bold;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+button:hover {
+  background: #00b8e6;
+  transform: translateY(-2px);
+}
+
+.description {
+  color: var(--color-muted);
+  margin-top: var(--spacing-s);
+}
+
+.footer {
+  font-size: 0.85rem;
+  margin-top: var(--spacing-xl);
+  color: var(--color-muted);
+}
