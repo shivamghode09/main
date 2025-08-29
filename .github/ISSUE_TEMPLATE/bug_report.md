@@ -1,7 +1,10 @@
-## Polished GitHub Issue
-
-**Title:**  
-`[BUG] Gravix UI – Newly created folders in src do not auto-register aliases until server restart`
+---
+name: Bug report
+about: Report an issue with Gravix
+title: "[BUG] "
+labels: bug
+assignees: shivamghode09
+---
 
 ## Description
 When creating a new folder inside the `src` directory while using the Gravix UI library, an alias should automatically be created and registered. However, while Vite internally detects and creates the alias, the application does not reload or recognize the alias until the dev server is manually restarted.  
