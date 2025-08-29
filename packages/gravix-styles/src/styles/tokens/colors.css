@@ -1,0 +1,97 @@
+/* Background colors */
+.bg-primary { background-color: var(--primary) !important; }
+.bg-secondary { background-color: var(--secondary) !important; }
+.bg-success { background-color: var(--success) !important; }
+.bg-info { background-color: var(--info) !important; }
+.bg-warning { background-color: var(--warning) !important; }
+.bg-danger { background-color: var(--danger) !important; }
+.bg-light { background-color: var(--light) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+.bg-white { background-color: var(--white) !important; }
+.bg-transparent { background-color: transparent !important; }
+.bg-body { background-color: var(--body-bg) !important; }
+
+/* Gray background colors */
+.bg-gray-100 { background-color: var(--gray-100) !important; }
+.bg-gray-200 { background-color: var(--gray-200) !important; }
+.bg-gray-300 { background-color: var(--gray-300) !important; }
+.bg-gray-400 { background-color: var(--gray-400) !important; }
+.bg-gray-500 { background-color: var(--gray-500) !important; }
+.bg-gray-600 { background-color: var(--gray-600) !important; }
+.bg-gray-700 { background-color: var(--gray-700) !important; }
+.bg-gray-800 { background-color: var(--gray-800) !important; }
+.bg-gray-900 { background-color: var(--gray-900) !important; }
+
+/* Background opacity */
+.bg-opacity-10 { --bs-bg-opacity: 0.1; }
+.bg-opacity-25 { --bs-bg-opacity: 0.25; }
+.bg-opacity-50 { --bs-bg-opacity: 0.5; }
+.bg-opacity-75 { --bs-bg-opacity: 0.75; }
+.bg-opacity-100 { --bs-bg-opacity: 1; }
+
+/* Background gradients */
+.bg-gradient {
+  background-image: var(--bs-gradient) !important;
+}
+
+/* Additional color utilities not covered by text colors */
+.border-primary { border-color: var(--primary) !important; }
+.border-secondary { border-color: var(--secondary) !important; }
+.border-success { border-color: var(--success) !important; }
+.border-info { border-color: var(--info) !important; }
+.border-warning { border-color: var(--warning) !important; }
+.border-danger { border-color: var(--danger) !important; }
+.border-light { border-color: var(--light) !important; }
+.border-dark { border-color: var(--dark) !important; }
+.border-white { border-color: var(--white) !important; }
+
+/* Link colors */
+.link-primary { color: var(--primary) !important; }
+.link-primary:hover, .link-primary:focus { color: #0a58ca !important; }
+
+.link-secondary { color: var(--secondary) !important; }
+.link-secondary:hover, .link-secondary:focus { color: #565e64 !important; }
+
+.link-success { color: var(--success) !important; }
+.link-success:hover, .link-success:focus { color: #146c43 !important; }
+
+.link-info { color: var(--info) !important; }
+.link-info:hover, .link-info:focus { color: #0aa1c0 !important; }
+
+.link-warning { color: var(--warning) !important; }
+.link-warning:hover, .link-warning:focus { color: #cc9a06 !important; }
+
+.link-danger { color: var(--danger) !important; }
+.link-danger:hover, .link-danger:focus { color: #b02a37 !important; }
+
+.link-light { color: var(--light) !important; }
+.link-light:hover, .link-light:focus { color: #f9fafb !important; }
+
+.link-dark { color: var(--dark) !important; }
+.link-dark:hover, .link-dark:focus { color: #1a1e21 !important; }
+
+/* Fill colors for SVGs */
+.fill-current { fill: currentColor !important; }
+
+.fill-primary { fill: var(--primary) !important; }
+.fill-secondary { fill: var(--secondary) !important; }
+.fill-success { fill: var(--success) !important; }
+.fill-info { fill: var(--info) !important; }
+.fill-warning { fill: var(--warning) !important; }
+.fill-danger { fill: var(--danger) !important; }
+.fill-light { fill: var(--light) !important; }
+.fill-dark { fill: var(--dark) !important; }
+.fill-white { fill: var(--white) !important; }
+
+/* Stroke colors for SVGs */
+.stroke-current { stroke: currentColor !important; }
+
+.stroke-primary { stroke: var(--primary) !important; }
+.stroke-secondary { stroke: var(--secondary) !important; }
+.stroke-success { stroke: var(--success) !important; }
+.stroke-info { stroke: var(--info) !important; }
+.stroke-warning { stroke: var(--warning) !important; }
+.stroke-danger { stroke: var(--danger) !important; }
+.stroke-light { stroke: var(--light) !important; }
+.stroke-dark { stroke: var(--dark) !important; }
+.stroke-white { stroke: var(--white) !important; }

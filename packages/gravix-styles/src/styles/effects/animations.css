@@ -1,0 +1,150 @@
+/* Animations and transitions */
+
+/* Basic transitions */
+.transition-none { transition: none !important; }
+.transition { transition: var(--transition-base) !important; }
+.transition-slow { transition: all 0.3s ease-in-out !important; }
+.transition-fast { transition: all 0.1s ease-in-out !important; }
+
+/* Transition properties */
+.transition-all { transition-property: all !important; }
+.transition-colors { transition-property: color, background-color, border-color !important; }
+.transition-opacity { transition-property: opacity !important; }
+.transition-shadow { transition-property: box-shadow !important; }
+.transition-transform { transition-property: transform !important; }
+
+/* Animation durations */
+.duration-75 { transition-duration: 75ms !important; }
+.duration-100 { transition-duration: 100ms !important; }
+.duration-150 { transition-duration: 150ms !important; }
+.duration-200 { transition-duration: 200ms !important; }
+.duration-300 { transition-duration: 300ms !important; }
+.duration-500 { transition-duration: 500ms !important; }
+.duration-700 { transition-duration: 700ms !important; }
+.duration-1000 { transition-duration: 1000ms !important; }
+
+/* Animation timing functions */
+.ease-linear { transition-timing-function: linear !important; }
+.ease-in { transition-timing-function: cubic-bezier(0.4, 0, 1, 1) !important; }
+.ease-out { transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important; }
+.ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; }
+
+/* Animation delays */
+.delay-75 { transition-delay: 75ms !important; }
+.delay-100 { transition-delay: 100ms !important; }
+.delay-150 { transition-delay: 150ms !important; }
+.delay-200 { transition-delay: 200ms !important; }
+.delay-300 { transition-delay: 300ms !important; }
+.delay-500 { transition-delay: 500ms !important; }
+.delay-700 { transition-delay: 700ms !important; }
+.delay-1000 { transition-delay: 1000ms !important; }
+
+/* Keyframe animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-down {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-left {
+  from { transform: translateX(10px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-right {
+  from { transform: translateX(-10px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Animation classes */
+.animate-none { animation: none !important; }
+.animate-fade-in { animation: fade-in 0.3s ease-out; }
+.animate-fade-out { animation: fade-out 0.3s ease-in; }
+.animate-slide-up { animation: slide-up 0.3s ease-out; }
+.animate-slide-down { animation: slide-down 0.3s ease-out; }
+.animate-slide-left { animation: slide-left 0.3s ease-out; }
+.animate-slide-right { animation: slide-right 0.3s ease-out; }
+.animate-bounce { animation: bounce 1s infinite; }
+.animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.animate-spin { animation: spin 1s linear infinite; }
+
+/* Animation fill modes */
+.animation-fill-none { animation-fill-mode: none !important; }
+.animation-fill-forwards { animation-fill-mode: forwards !important; }
+.animation-fill-backwards { animation-fill-mode: backwards !important; }
+.animation-fill-both { animation-fill-mode: both !important; }
+
+/* Animation direction */
+.animation-normal { animation-direction: normal !important; }
+.animation-reverse { animation-direction: reverse !important; }
+.animation-alternate { animation-direction: alternate !important; }
+.animation-alternate-reverse { animation-direction: alternate-reverse !important; }
+
+/* Animation play state */
+.animation-running { animation-play-state: running !important; }
+.animation-paused { animation-play-state: paused !important; }
+
+/* Common hover effects */
+.hover-grow {
+  transition: transform 0.3s ease;
+}
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+.hover-shrink {
+  transition: transform 0.3s ease;
+}
+.hover-shrink:hover {
+  transform: scale(0.95);
+}
+
+.hover-brighten {
+  transition: filter 0.3s ease;
+}
+.hover-brighten:hover {
+  filter: brightness(1.1);
+}
+
+.hover-darken {
+  transition: filter 0.3s ease;
+}
+.hover-darken:hover {
+  filter: brightness(0.9);
+}
+
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
